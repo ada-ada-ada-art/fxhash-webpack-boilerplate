@@ -52,7 +52,7 @@ Will bundle your js dependencies into a single minified `bundle.js` file, move y
 
 # Develop your token
 
-Once the environment is started, you can edit the `src/index.js` file to start building your artwork. The `index.html` file is located in the `public/` folder.
+Once the environment is started, you can edit the `src/index.ts` file to start building your artwork. The `index.html` file is located in the `public/` folder.
 
 You can import libraries using `npm` or by adding the library file in the `public/` folder and link those using relative paths in the `index.html`.
 
@@ -68,7 +68,7 @@ It creates 3 variables:
 - `fxhash`: a random 64 characters hexadecimal string. This particular variable will be hardcoded with a static hash when someone mints a token from your GT
 - `fxrand()`: a PRNG function that generates deterministic PRN between 0 and 1. **Simply use it instead of Math.random()**.
 
-*The index.js of this boilerplate quickly demonstrates how to use these*.
+*The index.ts of this boilerplate quickly demonstrates how to use these*.
 
 ## How do Generative Tokens work
 
