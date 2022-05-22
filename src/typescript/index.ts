@@ -20,8 +20,8 @@ function startSketch (s: p5): void {
   s.noiseSeed(initialRand)
 
   s.setup = () => {
-    s.background('#fff')
     s.createCanvas(window.innerHeight, window.innerHeight)
+    s.background('#fff')
   }
 
   s.draw = () => {
