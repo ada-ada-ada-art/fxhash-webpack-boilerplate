@@ -10,7 +10,7 @@ import * as p5 from 'p5'
 
 const initialRand = fxrand() * 9999999999
 
-const lona = new p5(startSketch,
+const canvas = new p5(startSketch,
   // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   document.getElementById('sketch') || undefined
 )
