@@ -1,0 +1,14 @@
+html {
+    background-color: #000;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -19,4 +19,13 @@ function startSketch (s: p5): void {
   s.randomSeed(initialRand)
   s.noiseSeed(initialRand)
 
+  s.setup = () => {
+    s.background('#fff')
+    s.createCanvas(window.innerHeight, window.innerHeight)
+  }
+
+  s.draw = () => {
+    s.background('#fff')
+    s.ellipse(s.mouseX, s.mouseY, 10, 10)
+  }
 }
