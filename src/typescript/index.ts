@@ -8,12 +8,12 @@ console.log(fxrand()) // deterministic PRNG function, use it instead of Math.ran
 // this code writes the values to the DOM as an example
 import * as p5 from 'p5'
 
+const initialRand = fxrand() * 9999999999
+
 const lona = new p5(startSketch,
   // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   document.getElementById('sketch') || undefined
 )
-
-const initialRand = fxrand() * 9999999999
 
 function startSketch (s: p5): void {
   s.randomSeed(initialRand)
