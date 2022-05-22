@@ -13,7 +13,7 @@ const lona = new p5(startSketch,
   document.getElementById('sketch') || undefined
 )
 
-const initialRand = fxrand()
+const initialRand = fxrand() * 9999999999
 
 function startSketch (s: p5): void {
   s.randomSeed(initialRand)
